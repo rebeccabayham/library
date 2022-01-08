@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Library</title>
+</head>
+<body>
+    <div id="header" class="banner-secondary">
+        <div id="logo">Becca's Library</div><div id="nav"><a href="https://rebeccabayham.com">Website</a><a href="https://www.goodreads.com/user/show/30808349-r-bayham">Goodreads</a></div>
+    </div>
+    <div id="banner">
+        <div id="latest-book-image">
+        </div> 
+        <div id="latest-book">
+            <h1>Latest Book</h1>
+            <div id="latest-book-title"></div>
+            <div id="latest-book-author"></div>
+            <div id="latest-book-description"></div>
+        </div>
+    </div>
+    <main>
+        <div id="previously-read" class="book-list">
+            <h2>Previously Read</h2>
+            <div id="book-container">
+                <!--Books will be added here-->
+            </div>
+        </div>
+        <div id="add-new-book" class="book-list">
+            <h2>Add a New Book</h2>
+            <div id="book-form">
+                    <label for="input-title">Title:</label>
+                    <input type="text" id="input-title" name="input-title"><br><br>
+                    <label for="input-author">Author:</label>
+                    <input type="text" id="input-author" name="input-author"><br><br>
+                    <label for="input-imageURL">Image URL:</label>
+                    <input type="text" id="input-imageURL" name="input-imageURL"><br><br>
+                    <label for="input-description">Description:</label>
+                    <input type="text" id="input-description" name="input-description"><br><br>
+                    <button id="submit-form" onclick="submitBook()">Add Book</button>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="navy-bg">
+        Copyright © Rebecca Bayham 2022
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
